@@ -1,0 +1,11 @@
+web ini digunakan untuk siapa?
+  web ini digunakan untuk orang yang suka membaca tentang teknologi yang khususnya komputer dan smartphone
+
+tema apa yang dipilih ?
+  Minimalis
+  
+fitur - fitur apa saya
+  - mengganti gambar ketika diklik
+  - Berpindah halaman
+  - pop up ketika kursor diatas element
+
