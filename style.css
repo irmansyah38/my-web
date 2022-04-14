@@ -72,7 +72,7 @@ header{
     display: flex ;
     align-content: center;
     justify-content: space-between;
-    height: 150px;
+    height: 100px;
     padding: 15px;
     box-shadow: 0 0 2px 2px rgba(150, 150, 150, 0.5);
 }
@@ -92,8 +92,26 @@ header nav ul li a{
 
 aside{
     grid-area: aside;
-    background-color: blue;
 }
+
+aside ul li a{
+    margin: 0;
+    
+}
+
+aside ul li a img{
+    border-radius:10px ;
+    width: 25%;
+    transition: 0.3ms;
+    transform: translate(0);
+
+}
+
+aside ul li a img:hover{
+    transform: translate(20px);
+}
+
+
 
 main{
     grid-area: main;
