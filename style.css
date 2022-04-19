@@ -49,3 +49,44 @@ table {
 
 /* Batas */
 
+body{
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-columns: "header"
+                            "main"
+                            "footer";
+    grid-gap: 20px;
+    height: fit-content;
+    
+}
+
+header{
+    background-color: rgba(84, 192, 231, 0.749);
+    height: 100px;
+    box-shadow: 1px 0 2px 2px rgba(155, 155, 155, 0.5);
+}
+
+main{
+    background-color: rgba(222, 222, 222, 0.3);
+    width: 80%;
+    margin: auto;
+    height: 800px;
+    box-shadow: 0 0 2px 2px rgba(155, 155, 155, 0.2);
+    border-radius: 10px;
+}
+
+main figure{
+    margin: 20px auto;
+    width: 80%;
+    height: 500px;
+    background: url(img/one\ piece.jpg);
+    box-shadow: 0 0 2px 2px rgba(155, 155, 155, 0.6) ;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    height: 50px;
+    box-shadow: 0 -1px 2px 2px rgba(155, 155, 155, 0.5);
+}
