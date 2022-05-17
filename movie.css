@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                        "movie"
+                        "footer";
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(96, 208, 170);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+header figure img{
+    width: 10%;
+    
+}
+
+header nav{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.movie{
+    grid-area: movie;
+    background-color: rgb(212, 208, 208);
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+}
+
+.movie .utama{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.movie .utama img{
+    width: 30%;
+}
+
+.movie .gambar{
+    margin: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+}
+
+.movie .gambar figure img{
+    width: 50%;
+    cursor: pointer;
+}
+
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.movie img{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
